@@ -1,3 +1,26 @@
+//complete this function to beautify the code
+function gridGenerator(boxes=16,new_padding){
+    var newPB=document.querySelector('#parentOfGridBody');
+    newPB.removeChild(gridBody);
+    gridBody=document.createElement('div');
+    gridBody.classList.add='gridBody';
+    newPB.appendChild(gridBody);
+    for (let i=0;i<boxes;i++){
+        gridRow=document.createElement('div');
+        gridBody.appendChild(gridRow);
+        gridRow.classList.add(`row`);
+        gridRow.setAttribute('id',`Row${i+1}`)
+        for (let j=0;j<boxes;j++){
+            gridColumn=document.createElement('div');
+            gridRow.appendChild(gridColumn);
+            gridColumn.classList.add('column');
+            gridColumn.addEventListener('mouseenter',changeColor);
+            gridColumn.setAttribute('id',`Column${j+1} Row${i+1}`);
+            gridColumn.setAttribute('style',`padding: ${new_padding}px`)
+        }
+    }
+}
+
 function change(boxes,new_padding){
     var newPB=document.querySelector('#parentOfGridBody');
     newPB.removeChild(gridBody);
