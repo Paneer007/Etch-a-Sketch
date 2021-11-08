@@ -1,26 +1,22 @@
-.gridBody{
-    padding:0px;
-    margin:0px;
-    border-width: 1px;
-    border-color: black;
-    border-style: solid;
+body{
     display: flex;
     flex-direction: column;
-    margin:auto;
     justify-content: center;
+    align-items: center;
 }
-.Row{
-    background-color: red;
-    display: flex;
-    flex-direction: row;
-    margin:0px;
-}
-.column{
-    padding:5px;
-    margin:0px;
-    background-color:black;
-    border-width: 0px;
+.gridBody{
+    border: 1px;
     border-color: black;
     border-style: solid;
+}
+.row{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+.column{
+    padding:20px;
+    margin:0px;
+    background-color:black;
 }
 

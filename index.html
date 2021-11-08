@@ -11,13 +11,15 @@
     <div>
         <h1>Etch-a-Sketch Game</h1>
     </div>
-    <div>
+    <div id='parentOfGridBody'>
         <div id='gridBody' class='gridBody'>
 
         </div>
     </div>
     <div>
-        <p>Update me to set no of grid pixels</p>
+        <p>Input width and height of square {in terms of boxes}</p>
+        <input type='range' min='16' max='64' value='16' class='slider' id='sliderOfFine' oninput="this.nextElementSibling.value = this.value" >
+        <output>16</output> <span>boxes</span>
     </div>
     <div></div>
     <script src='EtchaSketch.js'>
