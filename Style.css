@@ -1,0 +1,16 @@
+.Row{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.column{
+    padding:20px;
+    margin:0px;
+    background-color:white;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+}
+
