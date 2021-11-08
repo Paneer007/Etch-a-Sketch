@@ -55,6 +55,7 @@ slider.addEventListener('change',adjustFiness)
 let gridBody = document.querySelector('#gridBody');
 let gridRow;
 let gridColumn;
+let colorOfHover='white'
 for (let i=0;i<16;i++){
     gridRow=document.createElement('div');
     gridBody.appendChild(gridRow);
@@ -70,5 +71,20 @@ for (let i=0;i<16;i++){
 }
 function changeColor(e){
     console.log(e.target)
-    e.target.style.backgroundColor='white'
+    if(colorOfHover=='Rainbow'){
+        //enter code here
+    }else{
+        e.target.style.backgroundColor=`${colorOfHover}`;
+    }
 }
+function choice_button(button){
+    button.addEventListener('click',(e) => {
+        colorOfHover=e.target.value;
+        console.log(colorOfHover)
+    })
+}
+let buttons = document.querySelectorAll('button')
+buttons.forEach((button) =>{
+    choice_button(button)
+}
+)
