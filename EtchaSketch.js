@@ -72,7 +72,7 @@ for (let i=0;i<16;i++){
 function changeColor(e){
     console.log(e.target)
     if(colorOfHover=='Rainbow'){
-        //enter code here
+        e.target.style.backgroundColor=rainbow()
     }else{
         e.target.style.backgroundColor=`${colorOfHover}`;
     }
@@ -82,6 +82,12 @@ function choice_button(button){
         colorOfHover=e.target.value;
         console.log(colorOfHover)
     })
+}
+function rainbow(){
+    let r = Math.random()*255;
+    let g = Math.random()*255;
+    let b = Math.random()*255;
+    return `rgb(${r},${g},${b})`
 }
 let buttons = document.querySelectorAll('button')
 buttons.forEach((button) =>{
