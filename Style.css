@@ -1,15 +1,25 @@
-.Row{
-    background-color: white;
+.gridBody{
+    padding:0px;
+    margin:0px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    margin:auto;
     justify-content: center;
 }
-.column{
-    padding:20px;
+.Row{
+    background-color: red;
+    display: flex;
+    flex-direction: row;
     margin:0px;
-    background-color:white;
-    border-width: 2px;
+}
+.column{
+    padding:5px;
+    margin:0px;
+    background-color:black;
+    border-width: 0px;
     border-color: black;
     border-style: solid;
 }
