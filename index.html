@@ -16,15 +16,16 @@
 
         </div>
     </div>
-    <div>
+    <div id='sliderBox'>
         <p>Input width and height of square {in terms of boxes}</p>
         <input type='range' min='16' max='64' value='16' class='slider' id='sliderOfFine' oninput="this.nextElementSibling.value = this.value" >
         <output>16</output> <span>boxes</span>
     </div>
     <div>
-        <button value='White'>White</button>
-        <button value='Rainbow'> Rainbow</button>
-        <button value="Black">Erase</button>
+        <button value='White' class='ColorButton'>White</button>
+        <button value='Rainbow' class='ColorButton'> Rainbow</button>
+        <button value="Black" class='ColorButton'>Erase</button>
+        <button class='ClearScreen'>Clear screen</button>
     </div>
     <script src='EtchaSketch.js'>
     </script>
