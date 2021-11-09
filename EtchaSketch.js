@@ -76,6 +76,6 @@ clearButton.addEventListener('click',clearScreen);
 function clearScreen(){
     let list_of_grid=document.querySelectorAll('.column');
     for(let i=0;i<list_of_grid.length;i++){
-        list_of_grid[i].setAttribute('style','background-color:black;')
+        list_of_grid[i].style.backgroundColor='Black'
     }
 }
