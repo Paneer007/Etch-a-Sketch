@@ -15,7 +15,6 @@ function change(boxes,new_padding){
             gridColumn.classList.add('column');
             gridColumn.addEventListener('mouseenter',changeColor);
             gridColumn.setAttribute('id',`Column${j+1} Row${i+1}`);
-            //gridColumn.setAttribute('style',`padding: ${new_padding}px`)
             gridColumn.style.padding=`${new_padding}px`
         }
     }
